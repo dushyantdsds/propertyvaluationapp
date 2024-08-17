@@ -16,8 +16,7 @@
                 <div class="row justify-content-center">
                   <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
     
-                    <a href="{% url 'login' %}" class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</a>
-    
+                    
                     <form action="" method="post" class="mx-1 mx-md-4">{% csrf_token %}
     
                       <div class="d-flex flex-row align-items-center mb-4">
@@ -64,8 +63,12 @@
                       </div>
     
                     </form>
-    
+                    <div>
+                      <label for="" class="form-check-label">
+                      All ready have account, Login here   <a href="{% url 'login' %}">Login</a></label>
+                    </div>
                   </div>
+                  
                   <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
     
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"

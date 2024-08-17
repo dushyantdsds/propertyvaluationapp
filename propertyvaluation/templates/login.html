@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'bootstrap_link.html' %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="containerlog">
+        <img src="{% static 'img/1711028983_TP_Images_6.jpg' %}" alt="Image">
+        <div class="login_area">
+            <div class="login_container">
+                <div class="login_content">
+                    <div class="logo"><img src="{% static 'img/logo.png' %}" alt="logo"></div>
+                    <i class="fa fa-user"></i><input type="text" name="" placeholder="Enter Username" required><br>
+                    <i class="fa fa-key"></i><input type="password" name="" placeholder="Password" required>
+                </div>
+                <div class="buttons">
+                    <input type="submit" name="submit" value="Login">
+                    <input type="reset" name="reset" value="Reset">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
